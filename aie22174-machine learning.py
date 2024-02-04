@@ -1,6 +1,6 @@
 #question1
 def find_vowels(string1):                               # question1 find count of vowels.
-    vowels=["a","e","i","o","u"]                        # defined a list consisting of vowels.
+    vowels=["a","e","i","o","u","A","E","I","O","U"]                        # defined a list consisting of vowels.
     count_of_vowels=0                                   # initialising vowels count=0 because till now we didnt find any vowel.
     count_of_consonants=0                               # initialising consonants count=0 because till now we didnt find any consonant.
     for i in string1:                                   # we are iterating thorugh every element in string1 whichwe get through user input.
@@ -18,7 +18,7 @@ def common_list(list1,list2):                           # question 2 to find com
   count_of_common_elements=0                            # count of elementsis 0 because till now no element has matches.
   for i in list1:                                       # iterate in list 1.
     if (i in list2):                                    
-      count_of_common_elements=count_of_common_elements+1 # and if element from list1 is in list2 count adds by 1.
+      count_of_common_elements+=1 # and if element from list1 is in list2 count adds by 1.
   return (count_of_common_elements)                      # return the value.
 
 
