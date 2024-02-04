@@ -25,16 +25,13 @@ def common_list(list1,list2):                           # question 2 to find com
 
 #question 3
 def find_transpose(input_matrix):                        # question 3 to find transpose of the matrix.  
-  matrix2=input_matrix.copy()                            # we make a second matrix which is a copy of input matrix.
+  matrix2=[]                                             # we make a second matrix which is a copy of input matrix.
   for i in range(len(input_matrix)):                     # this is to get the total number of rows. 
+      row=[]                                             # this is to row of matrix2
     for j in range(len(input_matrix[0])):                # this is to get the columns.
-      if (i!=j):                                         # if index of i is not equal j.
-        temp=matrix2[j][i]                               # store value of matrix2 and order of j,i in temp.
-        matrix2[j][i]=input_matrix[i][j]                 # store value of input matrix of order i,j in matrix 2 of order j,i.
-        input_matrix[i][j]=temp                          #store value of temp in input matrix of order i,j.
-
-
-        return (matrix2)                                 # return matrix2.
+        row.append(input_matrix[j][i])                   # store values in the row of matrix2
+    matrix2.append(row)                                  # adding the rows to the matri
+  return matrix2
 
 
 
